@@ -1,0 +1,33 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/UK_trade_1997_to_2023.csv"},
+
+    "title": 
+      {"text": "UK Export of Goods and Services, 1997 - 2023", "subtitle": [
+        "Annual, current market prices",
+      "£ million",
+      "Data Source: ONS"]},
+      
+    "width":500,
+    "height":350,
+
+    "mark":{"type": "point"},
+ 
+   "encoding": {
+
+    "x": {
+      "field": "date", 
+      "type": "temporal",
+      "title":null
+      },
+
+    "y": {
+      "field": "value", 
+      "type": "quantitative",
+      "title":null
+     },
+     "color":{"field": "series","legend":{"title":"", "orient": "right"}
+     }
+   }
+}
