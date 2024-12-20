@@ -48,8 +48,8 @@
     </h1>
     <p style="margin-top: 0px; color: darkblue">
         <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        Millicent Makina | <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">LinkedIn</a> | <a
-            href="https://www.github.com/YOUR_GITHUB">GitHub</a>
+        Millicent Makina | <a href="https://www.linkedin.com/in/millicent-makina-411b3246/">LinkedIn</a> | <a
+            href="https://www.github.com/MMakina">GitHub</a>
     </p>
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
         This page is my portfolio of charts for the ten coding challenges.  
@@ -60,8 +60,7 @@
         <div class="chart-description"> 
             <h2>CC1: Hosting. Display charts in your own site </h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                I have set up my own Github account and live page using GitHub pages. I added my first index.html file to my repo and added two charts using the vegaembed function. 
-                
+                I have set up my own Github account and live page using GitHub pages. I added my first index.html file to my repo and added two charts using the vegaembed function. The codes for these charts were provided in class.
             </p>  
             <p> The first chart shows the relation between GDP and life expectancy across 5 regions </p>
             <p>the second chart shows GDP per capita in select countries</p>
@@ -71,43 +70,50 @@
     <div class="chart-description">
         <h2> </h2>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-
         </p>
+        
     </div>
     <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+   
+    <div class="chart-description">
+        <h2> </h2>
+        <p> I added a chart on UK productivity
+        </p>
+        
+    </div>
+    <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
    
 </section>
 <div class="chart-description">
     <h2>CC2. Building. Create your own visualisations</h2>
     <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-        I built two separate charts using the "create" tool. the first chart is on ethiopia inflation and the second chart is on vice spending
+        I built two separate charts using the "create" tool. the first chart is on ethiopia inflation using data from Economics Observatory.  In the first chart, i formatted the appearance of the chart. In the second chart on vice spending, i downloaded the data from the EconomicsObservatory, organized it and saved it as a csv file then generated it as a json file and embedded it in my page.
     </p>
 </div>
-<figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+<figure id=""></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 
 </section>
     <div class="chart-description">
-        <h2>Section 4: Ethiopia inflation</h2>
+        <h2> </h2>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-            As a first example, we're using a basic chart from our repo.
+            
         </p>
     </div>
     <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 
 <section>
     <div class="chart-description">
-        <h2>Section 5: Vice Spending</h2>
+        <h2> </h2>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-            As a first example, we're using a basic chart from our repo.
+            
         </p>
     </div>
     <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 
 </section>
     <div class="chart-description">
-        <h2>Section 6: UK Exports of goods and services </h2>
+        <h2>CC3: Debating. Use a visualisation in economic/policy commentary</h2>
+        <p> I chose the topic of UK exports as a debating/discussion point. </p>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
             The total value of UK exports has been increasing over the years, but this increase has mainly been driven by strong growth in UK services exports.
         </p>
@@ -122,6 +128,16 @@
     </p>
 </div>
 <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+</section>
+<div class="chart-description">
+    <h2>CC4. Replicating. Re-create, then improve someone else's chart</h2>
+    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+        I chose this chart of exit poll undertaken in 2020 displayed by RTE
+    </p>
+    <img src="https://github.com/MMakina/MMakina.github.io/blob/main/exit%20poll%202020%20RTE.jpg?raw=true" alt="bar graph showing factors influencing voters' decisions in exit poll 2020">
+</div>
+<figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
@@ -140,6 +156,7 @@
         let figure_5_spec = "vice_spending.json"
         let figure_6_spec = "UK_trade_1997_to_2023.json"
         let figure_7_spec = "UK_trade_percentage_change.json"
+        let figure_8_spec = "https://github.com/MMakina/MMakina.github.io/blob/main/exit%20poll%202020%20RTE.jpg"
 
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
         vegaEmbed('#Location2', figure_2_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
@@ -148,7 +165,7 @@
         vegaEmbed('#Location5', figure_5_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
         vegaEmbed('#Location6', figure_6_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
         vegaEmbed('#Location7', figure_7_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-
+        vegaEmbed('#Location7', figure_8_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
         // e.g. 
