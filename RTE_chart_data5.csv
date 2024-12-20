@@ -1,21 +1,21 @@
-﻿category,type,value
-Housing/homelessness,A,26
-Housing/homelessness,B,74
-Health,A,32
-Health,B,68
-Crime,A,3
-Crime,B,97
-Childcare,A,3
-Childcare,B,97
-Pension age,A,8
-Pension age,B,92
-Immigration,A,1
-Immigration,B,99
-Jobs,A,6
-Jobs,B,94
-Climate change,A,6
-Climate change,B,94
-Taxation,A,4
-Taxation,B,96
-Brexit,A,1
-Brexit,B,99
+﻿category,series,value
+1,Housing/homelessness,26
+2,Housing/homelessness,74
+1,Health,32
+2,Health,68
+1,Crime,3
+2,Crime,97
+1,Childcare,3
+2,Childcare,97
+1,Pension age,8
+2,Pension age,92
+1,Immigration,1
+2,Immigration,99
+1,Jobs,6
+2,Jobs,94
+1,Climate change,6
+2,Climate change,94
+1,Taxation,4
+2,Taxation,96
+1,Brexit,1
+2,Brexit,99
