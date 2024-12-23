@@ -1,0 +1,36 @@
+Date,Input,Value
+2018,Fertilizers,100
+2019,Fertilizers,86.1
+2020,Fertilizers,83.5
+2021,Fertilizers,100.4
+2022,Fertilizers,210.3
+2018,Fuel and Power,100
+2019,Fuel and Power,83.3
+2020,Fuel and Power,79.7
+2021,Fuel and Power,116
+2022,Fuel and Power,134.1
+2018,Bags,100
+2019,Bags,86.5
+2020,Bags,86.4
+2021,Bags,91.3
+2022,Bags,105.9
+2018,Manufactured Feeds,100
+2019,Manufactured Feeds,106.3
+2020,Manufactured Feeds,73.7
+2021,Manufactured Feeds,82.3
+2022,Manufactured Feeds,121.4
+2018,Certified Seeds,100
+2019,Certified Seeds,139.9
+2020,Certified Seeds,135.6
+2021,Certified Seeds,168.8
+2022,Certified Seeds,224.6
+2018,Other Material Inputs,100
+2019,Other Material Inputs,115
+2020,Other Material Inputs,79.7
+2021,Other Material Inputs,128.4
+2022,Other Material Inputs,162.4
+2018,Service Inputs,100
+2019,Service Inputs,109
+2020,Service Inputs,110
+2021,Service Inputs,111
+2022,Service Inputs,153.8
