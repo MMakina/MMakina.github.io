@@ -1,0 +1,148 @@
+Year,variable,value
+1975,External debt stock,1290219777
+1976,External debt stock,1493325017
+1977,External debt stock,1658887244
+1978,External debt stock,2173728428
+1979,External debt stock,2720995168
+1980,External debt stock,3386803514
+1981,External debt stock,3228165912
+1982,External debt stock,3367814484
+1983,External debt stock,3628284466
+1984,External debt stock,3511509910
+1985,External debt stock,4181365916
+1986,External debt stock,4603589574
+1987,External debt stock,5783681917
+1988,External debt stock,5809644179
+1989,External debt stock,5889233568
+1990,External debt stock,7055158929
+1991,External debt stock,7453499318
+1992,External debt stock,6898195692
+1993,External debt stock,7111518961
+1994,External debt stock,7124419831
+1995,External debt stock,7309198401
+1996,External debt stock,6813721635
+1997,External debt stock,6465020215
+1998,External debt stock,6823161839
+1999,External debt stock,6524904618
+2000,External debt stock,6147150098
+2001,External debt stock,5495276586
+2002,External debt stock,6095869528
+2003,External debt stock,6715084651
+2004,External debt stock,6916593411
+2005,External debt stock,6501013209
+2006,External debt stock,6719657604
+2007,External debt stock,7576695048
+2008,External debt stock,7691776549
+2009,External debt stock,8585721249
+2010,External debt stock,8885235533
+2011,External debt stock,10042095566
+2012,External debt stock,11832175543
+2013,External debt stock,13775500739
+2014,External debt stock,16911742537
+2015,External debt stock,19783760502
+2016,External debt stock,21057671043
+2017,External debt stock,26951349499
+2018,External debt stock,31433802016
+2019,External debt stock,34970099590
+2020,External debt stock,38038451074
+2021,External debt stock,41219100012
+2022,External debt stock,41556299640
+2023,External debt stock,42910026054
+1975,forex reserves,173405883.9
+1976,forex reserves,275522172.4
+1977,forex reserves,525784882.9
+1978,forex reserves,368830302
+1979,forex reserves,668545448.8
+1980,forex reserves,538712188.8
+1981,forex reserves,262828031.5
+1982,forex reserves,248102847.3
+1983,forex reserves,406428158.5
+1984,forex reserves,414388462
+1985,forex reserves,416724735.1
+1986,forex reserves,444494690.2
+1987,forex reserves,294401562.8
+1988,forex reserves,296453946.2
+1989,forex reserves,316624628.7
+1990,forex reserves,236115155.4
+1991,forex reserves,145138376.1
+1992,forex reserves,79549253.4
+1993,forex reserves,436745056
+1994,forex reserves,588142007.2
+1995,forex reserves,384262966.1
+1996,forex reserves,775927062.2
+1997,forex reserves,811092756.2
+1998,forex reserves,783051364.3
+1999,forex reserves,791589617.8
+2000,forex reserves,897865882
+2001,forex reserves,1064987677
+2002,forex reserves,1068140537
+2003,forex reserves,1482117159
+2004,forex reserves,1519538697
+2005,forex reserves,1799087913
+2006,forex reserves,2416073243
+2007,forex reserves,3355419016
+2008,forex reserves,2878951355
+2009,forex reserves,3849500809
+2010,forex reserves,4320858499
+2011,forex reserves,4265145710
+2012,forex reserves,5711831325
+2013,forex reserves,6598881869
+2014,forex reserves,7874414432
+2015,forex reserves,7514864907
+2016,forex reserves,7553884913
+2017,forex reserves,7325420063
+2018,forex reserves,8164380806
+2019,forex reserves,9115806005
+2020,forex reserves,8297263559
+2021,forex reserves,9490896581
+2022,forex reserves,7969488013
+2023,forex reserves,7341776190
+1975,debt servicing (% of GDP),14.94
+1976,debt servicing (% of GDP),14.81
+1977,debt servicing (% of GDP),20.45
+1978,debt servicing (% of GDP),13.97
+1979,debt servicing (% of GDP),18.37
+1980,debt servicing (% of GDP),21.03
+1981,debt servicing (% of GDP),26.97
+1982,debt servicing (% of GDP),30.48
+1983,debt servicing (% of GDP),33.77
+1984,debt servicing (% of GDP),34.8
+1985,debt servicing (% of GDP),38.67
+1986,debt servicing (% of GDP),35.61
+1987,debt servicing (% of GDP),39.77
+1988,debt servicing (% of GDP),38.99
+1989,debt servicing (% of GDP),36.64
+1990,debt servicing (% of GDP),35.41
+1991,debt servicing (% of GDP),32.61
+1992,debt servicing (% of GDP),31.14
+1993,debt servicing (% of GDP),17.06
+1994,debt servicing (% of GDP),20.56
+1995,debt servicing (% of GDP),25.26
+1996,debt servicing (% of GDP),22.39
+1997,debt servicing (% of GDP),15.56
+1998,debt servicing (% of GDP),14.85
+1999,debt servicing (% of GDP),15.83
+2000,debt servicing (% of GDP),21.02
+2001,debt servicing (% of GDP),15.88
+2002,debt servicing (% of GDP),16.35
+2003,debt servicing (% of GDP),15.84
+2004,debt servicing (% of GDP),8.28
+2005,debt servicing (% of GDP),9.99
+2006,debt servicing (% of GDP),7.14
+2007,debt servicing (% of GDP),6.33
+2008,debt servicing (% of GDP),4.89
+2009,debt servicing (% of GDP),5.14
+2010,debt servicing (% of GDP),4.41
+2011,debt servicing (% of GDP),4.32
+2012,debt servicing (% of GDP),4.65
+2013,debt servicing (% of GDP),4.73
+2014,debt servicing (% of GDP),11.36
+2015,debt servicing (% of GDP),8.33
+2016,debt servicing (% of GDP),11.17
+2017,debt servicing (% of GDP),14.6
+2018,debt servicing (% of GDP),23.7
+2019,debt servicing (% of GDP),38.43
+2020,debt servicing (% of GDP),28.75
+2021,debt servicing (% of GDP),20.37
+2022,debt servicing (% of GDP),23.67
+2023,debt servicing (% of GDP),30.18
