@@ -1,0 +1,344 @@
+Year,variable,value
+1975,Current Account Balance,-214892885
+1976,Current Account Balance,-118502397
+1977,Current Account Balance,36730232
+1978,Current Account Balance,-659234149
+1979,Current Account Balance,-492791450
+1980,Current Account Balance,-876258181
+1981,Current Account Balance,-561591703
+1982,Current Account Balance,-305337920
+1983,Current Account Balance,-47252317
+1984,Current Account Balance,-126891624
+1985,Current Account Balance,-115018658
+1986,Current Account Balance,-44990239
+1987,Current Account Balance,-502051365
+1988,Current Account Balance,-471288267
+1989,Current Account Balance,-590420206
+1990,Current Account Balance,-527083700
+1991,Current Account Balance,-213320796
+1992,Current Account Balance,-180154267
+1993,Current Account Balance,-261869236
+1994,Current Account Balance,-448915490
+1995,Current Account Balance,-1578240552
+1996,Current Account Balance,-961189673
+1997,Current Account Balance,-1790669371
+1998,Current Account Balance,-2632734196
+1999,Current Account Balance,-2365219130
+2000,Current Account Balance,-199391622
+2001,Current Account Balance,-320276834
+2002,Current Account Balance,-117669074
+2003,Current Account Balance,132419235
+2004,Current Account Balance,-131773011
+2005,Current Account Balance,-252316724
+2006,Current Account Balance,-510433478
+2007,Current Account Balance,-1032048241
+2008,Current Account Balance,-1982595677
+2009,Current Account Balance,-1688505911
+2010,Current Account Balance,-2368671950
+2011,Current Account Balance,-3819304011
+2012,Current Account Balance,-4216145263
+2013,Current Account Balance,-4842146888
+2014,Current Account Balance,-6377926517
+2015,Current Account Balance,-4420811285
+2016,Current Account Balance,-4037779793
+2017,Current Account Balance,-5739957846
+2018,Current Account Balance,-4989164831
+2019,Current Account Balance,-5258353851
+2020,Current Account Balance,-3730512497
+2021,Current Account Balance,-5596631178
+2022,Current Account Balance,-5889413352
+2023,Current Account Balance,-4317073674
+1975,External debt stock,1290219777
+1976,External debt stock,1493325017
+1977,External debt stock,1658887244
+1978,External debt stock,2173728428
+1979,External debt stock,2720995168
+1980,External debt stock,3386803514
+1981,External debt stock,3228165912
+1982,External debt stock,3367814484
+1983,External debt stock,3628284466
+1984,External debt stock,3511509910
+1985,External debt stock,4181365916
+1986,External debt stock,4603589574
+1987,External debt stock,5783681917
+1988,External debt stock,5809644179
+1989,External debt stock,5889233568
+1990,External debt stock,7055158929
+1991,External debt stock,7453499318
+1992,External debt stock,6898195692
+1993,External debt stock,7111518961
+1994,External debt stock,7124419831
+1995,External debt stock,7309198401
+1996,External debt stock,6813721635
+1997,External debt stock,6465020215
+1998,External debt stock,6823161839
+1999,External debt stock,6524904618
+2000,External debt stock,6147150098
+2001,External debt stock,5495276586
+2002,External debt stock,6095869528
+2003,External debt stock,6715084651
+2004,External debt stock,6916593411
+2005,External debt stock,6501013209
+2006,External debt stock,6719657604
+2007,External debt stock,7576695048
+2008,External debt stock,7691776549
+2009,External debt stock,8585721249
+2010,External debt stock,8885235533
+2011,External debt stock,10042095566
+2012,External debt stock,11832175543
+2013,External debt stock,13775500739
+2014,External debt stock,16911742537
+2015,External debt stock,19783760502
+2016,External debt stock,21057671043
+2017,External debt stock,26951349499
+2018,External debt stock,31433802016
+2019,External debt stock,34970099590
+2020,External debt stock,38038451074
+2021,External debt stock,41219100012
+2022,External debt stock,41556299640
+2023,External debt stock,42910026054
+1975,FDI net inflows,17158747
+1976,FDI net inflows,46371851
+1977,FDI net inflows,56545226
+1978,FDI net inflows,34414130
+1979,FDI net inflows,84009903
+1980,FDI net inflows,78973746
+1981,FDI net inflows,14147557
+1982,FDI net inflows,13000895
+1983,FDI net inflows,23738843
+1984,FDI net inflows,10753527
+1985,FDI net inflows,28845949
+1986,FDI net inflows,32725777
+1987,FDI net inflows,39381344
+1988,FDI net inflows,394431
+1989,FDI net inflows,62189917
+1990,FDI net inflows,57081096
+1991,FDI net inflows,18830977
+1992,FDI net inflows,6363133
+1993,FDI net inflows,145655517
+1994,FDI net inflows,7432413
+1995,FDI net inflows,42289248
+1996,FDI net inflows,108672932
+1997,FDI net inflows,62096810
+1998,FDI net inflows,26548246
+1999,FDI net inflows,51953456
+2000,FDI net inflows,110904550
+2001,FDI net inflows,5302623
+2002,FDI net inflows,27618447
+2003,FDI net inflows,81738243
+2004,FDI net inflows,46063931
+2005,FDI net inflows,21211685
+2006,FDI net inflows,50674725
+2007,FDI net inflows,729044146
+2008,FDI net inflows,95585680
+2009,FDI net inflows,116257609
+2010,FDI net inflows,178064607
+2011,FDI net inflows,1450474757
+2012,FDI net inflows,1380173662
+2013,FDI net inflows,1118825000
+2014,FDI net inflows,820937598
+2015,FDI net inflows,619724465
+2016,FDI net inflows,469533311
+2017,FDI net inflows,1346085345
+2018,FDI net inflows,767761507
+2019,FDI net inflows,469940267
+2020,FDI net inflows,-5403752
+2021,FDI net inflows,419719613
+2022,FDI net inflows,791581760
+2023,FDI net inflows,728766609
+1975,Foreign Reserves,173405884
+1976,Foreign Reserves,275522172
+1977,Foreign Reserves,525784883
+1978,Foreign Reserves,368830302
+1979,Foreign Reserves,668545449
+1980,Foreign Reserves,538712189
+1981,Foreign Reserves,262828032
+1982,Foreign Reserves,248102847
+1983,Foreign Reserves,406428159
+1984,Foreign Reserves,414388462
+1985,Foreign Reserves,416724735
+1986,Foreign Reserves,444494690
+1987,Foreign Reserves,294401563
+1988,Foreign Reserves,296453946
+1989,Foreign Reserves,316624629
+1990,Foreign Reserves,236115155
+1991,Foreign Reserves,145138376
+1992,Foreign Reserves,79549253
+1993,Foreign Reserves,436745056
+1994,Foreign Reserves,588142007
+1995,Foreign Reserves,384262966
+1996,Foreign Reserves,775927062
+1997,Foreign Reserves,811092756
+1998,Foreign Reserves,783051364
+1999,Foreign Reserves,791589618
+2000,Foreign Reserves,897865882
+2001,Foreign Reserves,1064987677
+2002,Foreign Reserves,1068140537
+2003,Foreign Reserves,1482117159
+2004,Foreign Reserves,1519538697
+2005,Foreign Reserves,1799087913
+2006,Foreign Reserves,2416073243
+2007,Foreign Reserves,3355419016
+2008,Foreign Reserves,2878951355
+2009,Foreign Reserves,3849500809
+2010,Foreign Reserves,4320858499
+2011,Foreign Reserves,4265145710
+2012,Foreign Reserves,5711831325
+2013,Foreign Reserves,6598881869
+2014,Foreign Reserves,7874414432
+2015,Foreign Reserves,7514864907
+2016,Foreign Reserves,7553884913
+2017,Foreign Reserves,7325420063
+2018,Foreign Reserves,8164380806
+2019,Foreign Reserves,9115806005
+2020,Foreign Reserves,8297263559
+2021,Foreign Reserves,9490896581
+2022,Foreign Reserves,7969488013
+2023,Foreign Reserves,7341776190
+1975,IMF Credit,80251485
+1976,IMF Credit,98790405
+1977,IMF Credit,64119682
+1978,IMF Credit,94041896
+1979,IMF Credit,188034367
+1980,IMF Credit,253896083
+1981,IMF Credit,258599036
+1982,IMF Credit,393464494
+1983,IMF Credit,464237305
+1984,IMF Credit,419810230
+1985,IMF Credit,521810030
+1986,IMF Credit,459803182
+1987,IMF Credit,401317634
+1988,IMF Credit,455445437
+1989,IMF Credit,415432259
+1990,IMF Credit,482115289
+1991,IMF Credit,493272361
+1992,IMF Credit,393368250
+1993,IMF Credit,363089585
+1994,IMF Credit,404747779
+1995,IMF Credit,373788319
+1996,IMF Credit,337223196
+1997,IMF Credit,250423491
+1998,IMF Credit,196459615
+1999,IMF Credit,182248736
+2000,IMF Credit,174880489
+2001,IMF Credit,145325744
+2002,IMF Credit,138136749
+2003,IMF Credit,167284559
+2004,IMF Credit,160065635
+2005,IMF Credit,211650589
+2006,IMF Credit,208916028
+2007,IMF Credit,327348788
+2008,IMF Credit,308716316
+2009,IMF Credit,857631721
+2010,IMF Credit,816750541
+2011,IMF Credit,1099534525
+2012,IMF Credit,1292972531
+2013,IMF Credit,1470879637
+2014,IMF Credit,1327897900
+2015,IMF Credit,1204763865
+2016,IMF Credit,1103364325
+2017,IMF Credit,1046744358
+2018,IMF Credit,878613103
+2019,IMF Credit,719708169
+2020,IMF Credit,1390662740
+2021,IMF Credit,2912915872
+2022,IMF Credit,3389104116
+2023,IMF Credit,3799188290
+1975,Multilateral debt,187125000
+1976,Multilateral debt,264084000
+1977,Multilateral debt,313743000
+1978,Multilateral debt,368253000
+1979,Multilateral debt,422638000
+1980,Multilateral debt,528280000
+1981,Multilateral debt,585511132
+1982,Multilateral debt,742262050
+1983,Multilateral debt,840297772
+1984,Multilateral debt,946066998
+1985,Multilateral debt,1159344154
+1986,Multilateral debt,1382122297
+1987,Multilateral debt,1681416579
+1988,Multilateral debt,1645743712
+1989,Multilateral debt,1782110348
+1990,Multilateral debt,2056036019
+1991,Multilateral debt,2153452067
+1992,Multilateral debt,2066801000
+1993,Multilateral debt,2197331000
+1994,Multilateral debt,2290075000
+1995,Multilateral debt,2411887000
+1996,Multilateral debt,2374843000
+1997,Multilateral debt,2245323000
+1998,Multilateral debt,2364431000
+1999,Multilateral debt,2310621000
+2000,Multilateral debt,2309409000
+2001,Multilateral debt,2286842000
+2002,Multilateral debt,2459856000
+2003,Multilateral debt,2741964000
+2004,Multilateral debt,2882726000
+2005,Multilateral debt,2663224000
+2006,Multilateral debt,2764089000
+2007,Multilateral debt,2968119000
+2008,Multilateral debt,3050475000
+2009,Multilateral debt,3156096000
+2010,Multilateral debt,3237614000
+2011,Multilateral debt,3388428000
+2012,Multilateral debt,3585785000
+2013,Multilateral debt,3982522000
+2014,Multilateral debt,4199127000
+2015,Multilateral debt,4381759000
+2016,Multilateral debt,4567712000
+2017,Multilateral debt,5303104000
+2018,Multilateral debt,5801797000
+2019,Multilateral debt,7124964000
+2020,Multilateral debt,9333613000
+2021,Multilateral debt,10228332000
+2022,Multilateral debt,11052655000
+2023,Multilateral debt,12464757000
+1975,Personal remittances,13200000
+1976,Personal remittances,9900000
+1977,Personal remittances,18480000
+1978,Personal remittances,26400000
+1979,Personal remittances,19139999
+1980,Personal remittances,27719999
+1981,Personal remittances,78540001
+1982,Personal remittances,67980003
+1983,Personal remittances,58080002
+1984,Personal remittances,56759998
+1985,Personal remittances,66000000
+1986,Personal remittances,52139999
+1987,Personal remittances,66000000
+1988,Personal remittances,76559998
+1989,Personal remittances,89099999
+1990,Personal remittances,139259995
+1991,Personal remittances,124080002
+1992,Personal remittances,114839996
+1993,Personal remittances,118139999
+1994,Personal remittances,137279999
+1995,Personal remittances,87497853
+1996,Personal remittances,87542881
+1997,Personal remittances,506615137
+1998,Personal remittances,531912793
+1999,Personal remittances,584854297
+2000,Personal remittances,537900024
+2001,Personal remittances,50914426
+2002,Personal remittances,57143480
+2003,Personal remittances,65845295
+2004,Personal remittances,375811334
+2005,Personal remittances,424991046
+2006,Personal remittances,570459274
+2007,Personal remittances,645207871
+2008,Personal remittances,667317334
+2009,Personal remittances,631460883
+2010,Personal remittances,685757272
+2011,Personal remittances,934149203
+2012,Personal remittances,1211021439
+2013,Personal remittances,1304277231
+2014,Personal remittances,1440846250
+2015,Personal remittances,1569267850
+2016,Personal remittances,1744639175
+2017,Personal remittances,1962273106
+2018,Personal remittances,2720366061
+2019,Personal remittances,2838192215
+2020,Personal remittances,3107932253
+2021,Personal remittances,3770089639
+2022,Personal remittances,4059710201
+2023,Personal remittances,4227611606
