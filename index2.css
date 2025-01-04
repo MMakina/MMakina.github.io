@@ -1,0 +1,174 @@
+/* General page layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbc8b3;
+    color: #333;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('https://via.placeholder.com/1500x800'); /* You can replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Main Container */
+.container {
+    margin-top: 100px; /* Adjusted for fixed navigation */
+    padding: 20px;
+    max-width: 1200px; /* Max width of the container */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; /* Ensures responsiveness */
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0; /* Increased padding for more space between sections */
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px; /* Additional margin between sections */
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Chart section with responsive layout */
+.chart-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.chart-container {
+    background-color: #fafafa;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    width: 100%; /* Ensure it fills its parent container */
+    max-width: 550px; /* Limit the max width for each chart */
+    margin: 0 auto;
+}
+
+.chart-container h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chart-container canvas {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .chart-section {
+        flex-direction: column; /* Stack charts on small screens */
+        gap: 20px;
+    }
+
+    .chart-container {
+        max-width: 100%;
+        width: 90%; /* Allow chart containers to take 90% of screen width */
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
