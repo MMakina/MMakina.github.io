@@ -24,7 +24,7 @@
 
     <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
     <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index2.css">
     <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
 
     <!-- This is a link to the vega-lite which we're using to make graphs -->
@@ -44,7 +44,7 @@
 <!-- The body tag contains the elements that visitors to our page will see. -->
     <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
         <!-- This is a header, it is the largest text on the page -->
-        Millicent Makina
+        PROJECT
     </h1>
     <p style="margin-top: 0px; color: darkblue">
         <!-- we're setting the margin to 0px so the header and authour name are close together -->
@@ -52,13 +52,21 @@
             href="https://www.github.com/YOUR_GITHUB">GitHub</a>
     </p>
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This page acts as your portfolio of charts. You can use it as a good starting point to display your work but make sure to customise it to make it your own, or even start from scratch.  
+        EXPLORING KENYA'S DEBT VULNERABILITIES: THE ROLE OF FOREIGN EXCHANGE RESERVES  
     </h3>
+    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        AIM OF THE PROJECT 
+    </h3>
+    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+        Kenya’s public debt has increased exponentially over the last decade with the Medium Term Debt Sustainability Analysis for 2024 estimating it  at USD 73.1 billion in nominal terms (70.8% of GDP). Of this amount, external debt is USD 38.8 billion which means that more than half of the country’s debt is denominated in foreign currency. This raises concerns on the ability of the country’s forex reserves to meet the debt obligations, as and when they fall due especially given the very real exposure to exchange rate risk as witnessed earlier in 2024 when significant loss in value of the shilling significantly increased the external debt stock. In June 2024, a USD 2 billion Eurobond maturity almost resulted in a default, but for a last minute intervention by the IMF as well as the issue of an international bond, which helped avert a looming debt default. 
 
+The project assesses Kenya’s ability to withstand external economic shocks by exploring the interplay between foreign exchange reserves and external debt accumulation, external debt service and  foreign exchange earnings/sources. 
+
+    </p>
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
         <div class="chart-description">
-            <h2>Section 1: A basic chart</h2>
+            <h2>chart 1: Trends in external debt accumulation and forex inflows</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
                 As a first example, we're using a basic chart from our repo.
@@ -67,6 +75,73 @@
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
    
+    <section>
+        <div class="chart-description">
+            <h2>chart 2: External debt vs. Forex reserves </h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
+                As a first example, we're using a basic chart from our repo.
+            </p>
+        </div>
+        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>chart 3: GDP vs. debt </h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
+                As a first example, we're using a basic chart from our repo.
+            </p>
+        </div>
+        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>chart 4: changes in foreign reserves over the years </h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
+                As a first example, we're using a basic chart from our repo.
+            </p>
+        </div>
+        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+  
+    <section>
+        <div class="chart-description">
+            <h2>chart 5: debt service and exports over the years </h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
+                As a first example, we're using a basic chart from our repo.
+            </p>
+        </div>
+        <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        DATA 
+    </h3>
+    <p>
+        I used data that was batch downloaded from the World Bank website using the World Bank API (coding challenge 6). This addresses automation/replication. I downloaded nine different JSON files using a loop. These were saved to my GitHub account.
+
+The files were in JSON format and I encountered a challenge as I couldn’t figure out how to use data in the JSON format to create the charts or how to convert them to the more usable CSV format. In the end, I used a JSON to CSV converter that I found online (konklone.io) to convert the data to CSV. I then manually created a CSV file, dropping missing values and only using data from the years with full data available.
+
+ I used python (pandas) to combine all the batch downloaded data into a combined data frame. Thereafter, I reshaped the data using python (pandas) to remove scientific notation and to convert from wide form to long form. However, I noted that some charts required wide form data for them to run effectively, so I saved different files of the same data in different formats depending on the needs of the chart. As a result, the charts use data from different CSV files.
+
+    </p>
+
+    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        CONCLUSION 
+    </h3>
+    <p>
+        While Kenya’s external debt increased rapidly in the past decade, foreign exchange reserves appear to be declining since 2023. This can be attributed to an increase in debt service obligations as shown in chart ** and **. Debt service as a percentage of exports has also increased significantly. This leaves the country exposed to external economic shocks.
+
+        Over the last five years, forex reserve accumulation has mostly been driven by a substantial increase in personal remittances, and – as from 2021 – an increase in IMF credit when the Fund approved a loan to Kenya under the EFF/ECF facility to support its Balance of Payments. Though remittances are a good lifeline that has supported forex reserves over the years, it can be risky to the economy if they dry up. It would be more beneficial for the country to diversify and focus on increasing export earnings which will also drive up economic growth in addition to enhancing resilience to external economic shocks. Export earnings has not increased much over the last decade.
+
+        Notably, despite rapid accumulation of debt to enhance economic performance, the level of debt doesn’t appear to have had much influence on economic growth.
+
+    </p>
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
         <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
@@ -77,10 +152,16 @@
     <script>
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
-        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable                                                                                                              // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-        
+        let figure_1_spec = "trend_debt_forex.json"; // We're storing the URL of the graph we want to display in a variable                                                                                                              // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+        let figure_2_spec = "debt_stock_reserves.json"; // We're storing the URL of the graph we want to display in a variable                                                                                                              // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+        let figure_3_spec = "GDP_debt_regression.json"
+        let figure_4_spec = "reserves_movement.json"
+        let figure_5_spec = "debt_service_exports.json"
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-       
+        vegaEmbed('#Location2', figure_2_spec)
+        vegaEmbed('#Location3', figure_3_spec)
+        vegaEmbed('#Location4', figure_4_spec)
+        vegaEmbed('#Location5', figure_5_spec)
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
         // e.g. 
@@ -90,6 +171,6 @@
 
     </script>
 
-</body>
-    
+    </body>
+
 </html>
