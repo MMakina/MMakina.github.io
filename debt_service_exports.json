@@ -1,0 +1,94 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Debt service as a percentage of exports",
+    "title": {
+      "text": "Debt service and Export earnings (1975-2023)",
+      "subtitle": [
+        "Export earnings in USD and Debt service as % of exports.",
+        "Data Source: World Bank"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "darkblue"
+    },
+    "height": 300,
+    "width": 600,
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/exports_debt_service.csv"
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "Year",
+          "gt": 1974
+        }
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "ordinal", 
+        "title": "Year",
+        "axis": {"labelAngle": 60, "labelFontSize": 10}
+      }
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "point": false,
+          "color": "cadetblue"
+        },
+        "encoding": {
+          "y": {
+            "field": "Export of goods and services",
+            "type": "quantitative",
+            "title": "Export of goods and services",
+            "axis": {
+              "titleColor": "darkblue",
+              "labelFontSize": 10,
+              "titleFontSize": 13
+            }
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "strokeDash": [6, 2],
+          "point": true,  
+          "color": "skyblue"
+        },
+        "encoding": {
+          "y": {
+            "field": "Debt service (% of exports)",
+            "type": "quantitative",
+            "title": "Debt service (% of exports)",
+            "axis": {
+              "titleColor": "skyblue",
+              "labelFontSize": 10,
+              "titleFontSize": 13
+            }
+          },
+          "tooltip": [
+            {
+              "field": "Year",
+              "type": "ordinal",
+              "title": "Year"
+            },
+            {
+              "field": "Debt service (% of exports)",
+              "type": "quantitative",
+              "title": "Debt service (% of exports)"
+            }
+          ]
+        }
+      }
+    ],
+    "resolve": {
+      "scale": {
+        "y": "independent"
+      }
+    }
+  }

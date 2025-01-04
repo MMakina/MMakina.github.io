@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "width": 450,
+      "height": 300,
+    "description": "A bubble chart showing the relationship between External Debt, Forex Reserves, and Debt Service",
+    "title": {
+      "text": "External debt stock vs forex reserves",
+      "subtitle": ["External debt stock (x), forex reserves (y). Source: World Bank", "Size of points based on debt service"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/reshapedbubble_debt_reserves.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "circle",
+    "encoding": {
+      "x": {
+        "field": "External debt stock",
+        "type": "quantitative",
+        "title": "External Debt Stock (in billions)"
+      },
+      "y": {
+        "field": "forex reserves",
+        "type": "quantitative",
+        "title": "Forex Reserves (in billions)"
+      },
+      "size": {
+        "field": "debt service on external debt",
+        "type": "quantitative",
+        "title": "Debt Service on External Debt (scaled)",
+        "scale": {
+          "domain": [0, 500000000],
+          "range": [20, 200] 
+        },
+        "legend": null  
+      },
+      "color": {
+        "field": "debt service on external debt",
+        "type": "quantitative",
+        "title": "Debt Service",
+        "scale": {
+          "scheme": "viridis"
+        },
+        "legend": {
+          "title": "Debt Service"
+        }
+      },
+      "tooltip": [
+        {"field": "Year", "type": "quantitative", "title": "Year"},
+        {"field": "External debt stock", "type": "quantitative", "title": "External Debt Stock"},
+        {"field": "forex reserves", "type": "quantitative", "title": "Forex Reserves"},
+        {"field": "debt service on external debt", "type": "quantitative", "title": "Debt Service"}
+      ]
+    }
+  
+   }
+  
+  
+  
+  
+  
+  

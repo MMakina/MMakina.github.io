@@ -1,0 +1,149 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "This graph uses batch downloaded data from the World Bank API.",
+    "title": {
+      "text": "Trends in external debt accumulation and forex inflows",
+      "subtitle": [
+        "Current US$",
+        "Data source: World Bank",
+        ""
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "darkblue"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/reshapedWB_data.csv"
+    },
+    "height": 300,
+    "width": 500,
+    "transform": [
+      {
+        "filter": {
+          "field": "variable",
+          "oneOf": [
+            "Current Account Balance",
+            "External debt stock",
+            "FDI net inflows",
+            "Foreign Reserves",
+            "IMF Credit",
+            "Multilateral debt",
+            "Personal remittances"
+          ]
+        }
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "scale": {
+          "domain": ["1975", "2023"]
+        },
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelAngle": 20
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "",
+        "axis": {
+          "grid": false
+        }
+      },
+      "color": {
+        "condition": {
+          "param": "hover",
+          "field": "variable",
+          "type": "nominal",
+          "legend": {
+            "title": "",
+            "orient": "right"
+          },
+          "scale": {
+            "scheme": "yellowgreenblue"
+          }
+        },
+        "value": "black"
+      },
+      "tooltip": [
+        {
+          "field": "variable",
+          "title": "variable"
+        },
+        {
+          "field": "Year",
+          "type": "temporal",
+          "title": "Year",
+          "timeUnit":"year"
+        },
+        
+        {
+          "field": "value",
+          "title": "Value"
+        }
+      ],
+      "opacity": {
+        "condition": {
+          "param": "hover",
+          "value": 1
+        },
+        "value": 0.2
+      }
+    },
+    "layer": [
+      {
+        "description": "transparent layer to make it easier to trigger selection",
+        "params": [
+          {
+            "name": "hover",
+            "value": [
+              {
+                "variable": "Current Account Balance"
+              }
+            ],
+            "select": {
+              "type": "point",
+              "fields": ["variable"],
+              "on": "mouseover"
+            }
+          }
+        ],
+        "mark": {
+          "type": "line",
+          "strokeWidth": 8,
+          "stroke": "transparent"
+        }
+      },
+      {
+        "mark": "line"
+      },
+      {
+        "encoding": {
+          "x": {
+            "aggregate": "max",
+            "field": "Year"
+          },
+          "y": {
+            "aggregate": {
+              "argmax": "Year"
+            },
+            "field": "value"
+          }
+        },
+        "layer": [
+          {
+            "mark": {
+              "type": "circle"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
+  

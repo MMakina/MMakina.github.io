@@ -1,0 +1,76 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "GDP growth and external debt",
+  
+    "title": {
+      "text": "GDP growth and external debt",
+      "subtitle": "External debt stock (x), and GDP growth (y) Source: World Bank",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/filteredcombined_WB_data.csv"
+    },
+  
+    "height": 300,
+    "width": 600,
+  
+    "layer": [
+      {
+        "mark": {
+          "type": "circle",
+          "color": "rgb(0,47,167)",
+          "size": 100
+        },
+  
+        "encoding": {
+          "x": {
+            "field": "GDP growth (annual %)", 
+            "type": "quantitative",
+            "title": null
+          },
+  
+          "y": {
+            "field": "External debt stock", 
+            "type": "quantitative",
+            "title": null
+          },
+  
+          "tooltip": [
+            {"field": "Year", "type": "quantitative", "title": "Year"},
+            {"field": "GDP growth (annual %)", "type": "quantitative", "title": "GDP Growth (%)"},
+            {"field": "External debt stock", "type": "quantitative", "title": "External Debt Stock"}
+          ]
+        }
+      },
+  
+      {
+        "mark": {
+          "type": "line", 
+          "color": "grey"
+        },
+  
+        "transform": [
+          {
+            "regression": "External debt stock", 
+            "on": "GDP growth (annual %)"
+          }
+        ],
+  
+        "encoding": {
+          "x": {
+            "field": "GDP growth (annual %)", 
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "External debt stock", 
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  }
