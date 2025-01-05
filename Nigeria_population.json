@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/Nigeria1.geojson",
+      "format": {"type": "json", "property": "features"}
+    },
+  "title": {
+      "text": "Nigeria Population by State",
+      "subtitle": ["2019 Census", "Source: Open.Africa/de"]
+    },
+    "transform": [
+      {
+        "lookup": "properties.name",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/Nigeria_Population_data.csv"
+          },
+          "key": "State",
+          "fields": ["Population (2019)"]
+        }
+      }
+    ],
+    "projection": {
+      "type": "mercator"
+    },
+    "mark": {"type": "geoshape", "stroke": "black"},
+    "encoding": {
+      "color": {
+        "field": "Population (2019)",
+        "type": "quantitative",
+        "title": "Population (2019)"
+      },
+      "tooltip": [
+        {"field": "properties.name", "type": "nominal", "title": "State Name"},
+        {"field": "Population (2019)", "type": "quantitative", "title": "Population"}
+      ]
+    }
+  }
+  

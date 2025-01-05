@@ -1,0 +1,32 @@
+{
+    "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+    "data": {"name": "data-99135524195a2c56e610478eb29bc925"},
+    "mark": {"type": "bar"},
+    "encoding": {
+      "tooltip": [
+        {"field": "Store ID", "type": "quantitative"},
+        {"field": "Average Price", "type": "quantitative"}
+      ],
+      "x": {"field": "Store ID", "title": "Store ID", "type": "ordinal"},
+      "y": {
+        "field": "Average Price",
+        "title": "Average Unit Price",
+        "type": "quantitative"
+      }
+    },
+    "height": 300,
+    "title": "Average Unit Price per Store",
+    "width": 400,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "datasets": {
+      "data-99135524195a2c56e610478eb29bc925": [
+        {"Store ID": 1, "Average Price": 4.314376483101076},
+        {"Store ID": 2, "Average Price": 7.781259950748129},
+        {"Store ID": 3, "Average Price": 5.2598520048600115},
+        {"Store ID": 4, "Average Price": 2.349290044422784},
+        {"Store ID": 5, "Average Price": 4.789842863343224},
+        {"Store ID": 6, "Average Price": 4.924620753831838},
+        {"Store ID": 7, "Average Price": 3.6962566205239895}
+      ]
+    }
+  }

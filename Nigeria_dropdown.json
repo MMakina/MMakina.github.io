@@ -1,0 +1,82 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 350,
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/Nigeria1.geojson",
+      "format": {"property": "features"}
+    },
+  
+    "title": {
+      "text": "Nigeria Statistics",
+      "fontSize": 12,
+      "subtitle":"Source:OpendataforAfrica",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "middle",
+      "color": "black"
+    },
+  
+    "projection": {"type": "mercator"},
+    "mark": {"type": "geoshape", "stroke":"black"}, 
+  
+    "params": [
+      {
+        "name": "SelectParam",
+        "value": "Population (2019)",
+        "bind": {
+          "input": "select",
+          "options": [
+            "Population (2019)",
+            "Unemployment Rate",
+            "Absolute Poverty (2009/10)"
+
+          ],
+          "name": "Select series:"
+        }
+      }
+    ],
+  
+    "transform": [
+      {
+        "lookup": "properties.name",
+        "from": {
+          "data": {"url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/Nigeria_Combined_data.csv"},
+          "key": "State",
+          "fields": [       
+            "Population (2019)",
+            "Unemployment Rate",
+            "Absolute Poverty (2009/10)"
+
+          ]
+        }
+      },
+            {"calculate": "datum[SelectParam]","as": "varSelected"}
+
+    ],
+    "encoding":{
+      
+      "color":{
+        "field":"varSelected",
+        "legend":{
+          "title": "",
+          "legendX": 300,
+          "legendY": 0,
+          "orient": "bottom-right",
+          "direction": "vertical"
+        },
+        "type": "quantitative",
+        "scale":{
+          "scheme":"reds",
+          "reverse": false
+        }
+      },
+      "tooltip":[
+        {"field":"properties.name", "title": "State"},
+        {"field":"varSelected", "title": "Value", "format": ","}
+      ]
+    }
+  }
+
+
+

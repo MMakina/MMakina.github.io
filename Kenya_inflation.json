@@ -1,0 +1,65 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Checkbox to set y-axis from zero. Sliders to filter years.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/Kenya_inflation.csv"
+    },
+    "width": 350,
+    "height": 300,
+    "title": {
+      "text": "Kenya Inflation Rate",
+      "subtitle": [
+        "1960-2023. Source: FRED"
+      ],
+      "align": "left",
+      "anchor": "start",
+      "fontSize": 14,
+      "offset":10, 
+      "subtitleFontSize": 11,
+      "subtitleFontStyle": "italic"
+    },
+    "config": {"view": {"stroke": "transparent"}},
+    "params": [
+      {
+        "name": "toggleZero",
+        "value": false,
+        "bind": {"input": "checkbox", "name": "Start y-axis at 0"}
+      },
+      {
+        "name": "minYear",
+        "value": 2000,
+        "bind": {
+          "input": "range",
+          "min": 1960,
+          "max": 2023,
+          "step": 1,
+          "name": "Start year:"
+        }
+      }
+    ],
+    "mark": {"type": "line", "color": "darkblue"},
+    "transform": [
+      {"calculate": "year(datum.Date)", "as": "year"},
+      {"filter": "year(datum.Date) >= minYear"}
+    ],
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title":null,
+        "axis": {"grid": false, "tickOpacity": 0, "labelPadding": 5}
+        
+      },
+       "y": {
+            "field": "Value",
+            "type": "quantitative",
+            "title": "Inflation Rate (%)"
+          }
+          
+        }
+    
+      }
+    
+  
+  
+  

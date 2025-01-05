@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/Nigeria1.geojson",
+      "format": {"property": "features"}
+    },
+    "title": {
+      "text": "Base Map of Nigeria",
+      "subtitle": ["Nigeria States", "Source: Simplemaps.com"]
+    },
+        "mark": {"type": "geoshape"},
+         "encoding": {
+      "tooltip": {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "Name"
+      }
+    }
+  }
