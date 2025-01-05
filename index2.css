@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #dbc8b3;
+    background-color: #add8e6;
     color: #333;
     box-sizing: border-box;
     overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -22,6 +22,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    height: auto; 
     background-color: #333;
     color: white;
     padding: 15px 0;
@@ -42,7 +43,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 5.0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -83,6 +85,16 @@ nav ul li a:hover {
     margin-right: auto;
     width: 90%; /* Ensures responsiveness */
 }
+/*headings*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; /* Adjust the size to make it larger */
+    font-weight: 700; /* Make it bold */
+    letter-spacing: 2px; /* Slightly increase letter spacing for a more elegant look */
+    color: #333; /* Dark color for contrast */
+}
+
+
 
 /* Section Styles */
 .section {
@@ -95,36 +107,45 @@ nav ul li a:hover {
 .section h2 {
     font-size: 2.5rem;
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 30px;
     color: #333;
 }
 
+p {
+    margin-bottom: 30px;
+    line-height: 2.0;
+}
 /* Chart section with responsive layout */
 .chart-section {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .chart-container {
+    flex: 1 1 calc(33.33% - 20px);
     background-color: #fafafa;
-    border: 2px solid #ddd;
+    border: 10px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     width: 100%; /* Ensure it fills its parent container */
-    max-width: 550px; /* Limit the max width for each chart */
+    max-width: 500px; /* Limit the max width for each chart */
     margin: 0 auto;
+    margin-bottom: 60px;
 }
 
 .chart-container h3 {
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .chart-container canvas {
