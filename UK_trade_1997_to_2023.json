@@ -9,8 +9,8 @@
       "£ million",
       "Data Source: ONS"]},
       
-    "width":500,
-    "height":350,
+    "width":400,
+    "height":300,
 
     "mark":{"type": "point"},
  

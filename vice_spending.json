@@ -4,8 +4,8 @@
       "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/vice_spending_uk.csv"
     },
     "mark": {"type": "line"},
-    "width": 500,
-    "height": 350,
+    "width": 400,
+    "height": 300,
     "title": {
       "text": "Vice spending",
       "subtitle": [
