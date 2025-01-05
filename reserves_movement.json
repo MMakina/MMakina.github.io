@@ -15,8 +15,8 @@
     "data": {
       "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/reshapedWB_data.csv"
     },
-    "height": 400,
-    "width": 600,
+    "height": 300,
+    "width": 500,
     "mark": {"type": "bar"},
     "transform": [
       {
