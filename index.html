@@ -27,11 +27,18 @@
     <link rel="stylesheet" type="text/css" href="index2.css">
     <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
 
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    </head>       
+
+
     <!-- This is a link to the vega-lite which we're using to make graphs -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
    
+
+
    <style>
         #chartGrid {
             display: flex;
@@ -69,7 +76,7 @@
 
         .tab-content {
         display: none;
-        padding: 20px;
+        padding: 30px;
         background-color: #fff;
         }
 
@@ -77,11 +84,26 @@
         display: block;
         }
 
-        #portfolio, #home, #project {
+        #portfolio, #project {
+            margin-right: 7%;
+            margin-left: 7%;
+            text-align: center;
+            background-color: #add8e6;
+        }
+
+        #home {
             margin-right: 5%;
             margin-left: 5%;
             text-align: center;
-            background-color: #dbc8b3;
+            background-color: #add8e6;
+        }
+
+        #home p {
+            margin-right: 5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            text-align: center;
+            background-color: #add8e6;
         }
 
     </style>
@@ -104,289 +126,488 @@
         <div id="home" class="tab-content active">
             <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
                 <!-- This is a header, it is the largest text on the page -->
-                Millicent Makina
+              <br>
+                PP 434: Data Visualisation for Policy Making
             </h1>
-            <br/>
-            <hr/>
-            <p style="margin-top: 0px; color: darkblue">
+         <hr>
+         <hr>
+         <hr>
+         <hr>
+
+            <p style="margin-top: 300px; color: darkblue">
                 <!-- we're setting the margin to 0px so the header and authour name are close together -->
                 Millicent Makina | <a href="https://www.linkedin.com/in/millicent-makina-411b3246/">LinkedIn</a> | <a
                     href="https://www.github.com/MMakina">GitHub</a>
             </p>
-            <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-                This page is my portfolio of charts for the ten coding challenges.  
-            </h3>
+            <p style="margin-top: 0px; color: darkblue">          
+                London School of Economics | Master of Public Policy | 2024/2025
+            </p>
+            
         </div>
 
 
         <!-- Portfolio Tab -->
         <div id="portfolio" class="tab-content">
+            <h1> 
+                Portfolio
+            </h1>
+            
             <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
+          <br>
+          <hr>
+            <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+                This page is my portfolio of charts for the ten coding challenges.  
+            </h3>
+            <hr>
+            <br>
+            
             <section>
                 <div class="chart-description"> 
                     <h2>CC1: Hosting. Display charts in your own site </h2>
+                    <hr>
                     <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                        I have set up my own Github account and live page using GitHub pages. I added my first index.html file to my repo and added two charts using the vegaembed function. The codes for these charts were provided in class.
-                    </p>  
-                    <p> The first chart shows the relation between GDP and life expectancy across 5 regions </p>
-                    <p>the second chart shows GDP per capita in select countries</p>
+                        I have set up my own Github account and live page using GitHub pages. I added my first index.html file to my repo and added two charts using the vegaembed function. The first chart shows the relation between GDP and life expectancy across 5 regions and the second chart shows GDP per capita in select countries. The codes for these charts are from the RDeconomist repo provided in class.
+                    </p>      
                 </div>
+                <br>
                 <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-            </section>
-            
-            <div class="chart-description">
-                <h2> </h2>
-                <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                </p>
-                
-            </div>
-            <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-           
-            <div class="chart-description">
-                <h2> </h2>
-                <p> I added a chart on UK productivity
-                </p>
-                
-            </div>
-            <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-           
-            <div class="chart-description">
-                <h2>CC2. Building. Create your own visualisations</h2>
-                <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                    I built two separate charts using the "create" tool. the first chart is on ethiopia inflation using data from Economics Observatory.  In the first chart, i formatted the appearance of the chart. In the second chart on vice spending, i downloaded the data from the EconomicsObservatory, organized it and saved it as a csv file then generated it as a json file and embedded it in my page.
-                </p>
-            </div>
-            <figure id=""></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-        
-            <div class="chart-description">
-                <h2> </h2>
-                <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                    
-                </p>
-            </div>
-            <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-        
-            <section>
-                <div class="chart-description">
-                    <h2> </h2>
-                    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                        
+                <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+                <div>
+                    <br>
+                    <p>
+                        I also added a chart on UK productivity from the RDeconomist repo.
                     </p>
-                </div>
-                <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-            
+                </div> 
+
+            <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+           <br>
+           <hr>
             </section>
 
+            <section> 
             <div class="chart-description">
-                <h2>CC3: Debating. Use a visualisation in economic/policy commentary</h2>
-                <p> I chose the topic of UK exports as a debating/discussion point. </p>
+                <br>
+                <h2>CC2. Building. Create your own visualisations</h2>
+                <hr>
                 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                    The total value of UK exports has been increasing over the years, but this increase has mainly been driven by strong growth in UK services exports.
+                    I built two separate charts using the "create" tool. the first chart is on ethiopia inflation using data from Economics Observatory.  In the first chart, I formatted the appearance of the chart only. In the second chart on vice spending, i downloaded the data from the EconomicsObservatory, organized it and saved it as a csv file then saved it as a json file and embedded it in my page.
                 </p>
             </div>
-            <figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-        
+            <br>
+            <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+            <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+            <br>
+            <hr>
+             </section>
+
+        <section>
             <div class="chart-description">
-                <h2> </h2>
+                <br>
+                <h2>CC3: Debating. Use a visualisation in economic/policy commentary</h2>
+                <hr>
+                <p> 
+                    I chose the topic of UK exports as a debating/discussion point.The total value of UK exports has been increasing over the years, but this increase has mainly been driven by strong growth in UK services exports. 
+                </p>
+            <br>
+            <figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+            <br>
                 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                     The growth in services exports exceeding imports is mostly seen in nominal terms. However, the annualised percentage growth shows that service exports only exceeded goods exports in 2022
                 </p>
             </div>
+            <br>
             <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-        
-            <div class="chart-description">
+            <br>
+            <hr>
+        </section>
+
+        <section>  
+             <div class="chart-description">
+                <br>
                 <h2>CC4. Replicating. Re-create, then improve someone else's chart</h2>
+                <hr>
                 <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                     I chose this chart of exit poll undertaken in 2020 displayed by RTE. The chart is misleading as the beige bars on the left appear to be showing the percentage share indicated but it is actually the bars on the right.Thus even though brexit, for instance, appears to be the most important factor, it is actually the least, at 1%. 
                 </p>
                 <img src="https://github.com/MMakina/MMakina.github.io/blob/main/exit%20poll%202020%20RTE.jpg?raw=true" 
                 alt="bar graph showing factors influencing voters' decisions in exit poll 2020"
-                style="width: 50%; height: auto;">
+                style="width: 60%; height: auto;">
             </div>
+                <p> OpenAI.(2024).ChatGPT (December Version) [Large language model]. <a href="https://chatgpt.com/c/67656291-262c-8004-b74d-0348defaba0b">ChatGPTprompt</a> </p>
+            <br>
             <figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-            
+            <br>
+
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                I have tried to replicate the chart using vega-lite. it is a normalized 100% stacked bar chart with the colors red and beige as shown in the image (json code was generated with the assistance of chatGPT). I was unable to flip the bars to be on the same side as in the image, and to place the percentages on the red bars so I left them at the bottom of the chart.
+                I replicated the chart to the extent that I could, using vega-lite. It is a normalized 100% stacked bar chart with the colors red and beige as shown in the image.
             </p>
-
-
+            <br>
             <figure id="Location9"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-           
+            <p> OpenAI.(2024).ChatGPT (December Version) [Large language model]. <a href="https://chatgpt.com/c/6766afdf-1a48-8004-92c2-21a0e80bf0eb">ChatGPTprompt</a> </p>
+           <br>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            I have improved the chart by simply using a bar graph and ordering the arrangement from the largest to the smallest number. This makes the graph easier to read and interpret (json code was generated with the assistance of chatGPT).
+            I improved the chart by redesigning it as a bar graph and ordering the arrangement from the largest to the smallest size. This makes the graph easier to read and interpret (json code was generated with the assistance of chatGPT).
             </p>
-
+            <br>
             <figure id="Location10"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-        
-            <section>
-                <div class="chart-description"> 
+            <br>
+            <hr>
+        </section>
+
+
+        <section>
+                <div class="chart-description">
+                    <br> 
                     <h2>CC5:Scraper. Implement a data scraper of your own  </h2>
+                    <hr>
                     <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                        I chose the Kenya National Bureau of Statistics (KNBS) website because I will be undertaking data analysis for my home country and was testing functionality. This is the link to the Google Colab python notebook https://colab.research.google.com/drive/189wIGVbs4DV3g8vL65H8K2xCPGF36o2z?usp=sharing  
+                        I chose the Kenya National Bureau of Statistics (KNBS) website because I will be undertaking data analysis for my home country and was testing functionality.  
                     </p>  
-                    <p> </p>
                 </div>
+                <br>
                 <figure id="Location11"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-            
+                <p> 
+                  OpenAI.(2024).ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/6767069c-dca4-8004-8df6-cf293d802520">ChatGPTprompt_1</a>
+                </p>
+                <p>
+                    OpenAI. (2024). chatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/67697407-9200-8004-923b-b1a1cc7393e2">ChatGPTprompt_2</a>
+                </p>
+                <p>
+                    <a href="https://colab.research.google.com/drive/189wIGVbs4DV3g8vL65H8K2xCPGF36o2z?usp=sharing">COLAB</a>
+                </p>
+                <br>
+                <hr>
+        </section>
+
                 <section>
                     <div class="chart-description"> 
+                        <br>
                         <h2>CC6:Loops. Build a dashboard  </h2>
+                        <hr>
                         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                            Kenya External debt and Balance of Payments data batch downloaded from the Worldbank database. This is the link to the Google Colab python notebook https://colab.research.google.com/drive/1k3KbKbhoDrs1K7BiexmlPql2-A87rT45?usp=sharing
-            
+                            Kenya External debt and Balance of Payments data batch downloaded from the Worldbank database.
                         </p>  
-                        <p> Codes for displaying the charts and saving the charts as JSON files generated through chatGPT </p>
                     </div>
+                    <div>
                     <figure id="Location12"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+                    </div>
+                    <br>
                     <div> 
                         <figure id="Location13"></figure>
                     </div>
+                    <br>
                     <div> 
                         <figure id="Location14"></figure>
                     </div>
+                    <br>
                     <div> 
                         <figure id="Location15"></figure>
                     </div>
+                    <br>
                     <div>
                         <figure id="Location16"></figure>
                     </div>
+                    <br>
                     <div>
                         <figure id="Location17"></figure>
                     </div>
+                    <br>
                     <div>
                         <figure id="Location18"></figure>
                     </div>
+                    <br>
                     <div>
                         <figure id="Location19"></figure>
                     </div>
+                    <br>
                     <div>
                         <figure id="Location20"></figure>
                     </div>
-                    <section>
-                        <div class="chart-description"> 
-                            <h2>CC7: Maps. Base maps and choropleths  </h2>
-                            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                                
-                            </p>  
-                            <p> </p>
-                        </div>
-                        <figure id="Location21"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->   
-                        <figure id="Location22"></figure>
+                    <br>
+                    <p> OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/67698582-fbfc-8004-9a6b-876131bf2de1">ChatGPTprompt_1</a> 
+                    </p>
+                    <p> 
+                        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/6769a7a6-6fdc-8004-8434-90db355195c1">ChatGPTprompt_2</a>
+                    </p>
+                    <p>
+                        <a href="https://colab.research.google.com/drive/1k3KbKbhoDrs1K7BiexmlPql2-A87rT45?usp=sharing">COLAB</a>
+                    </p>
+                    <br>
+                    <hr>
+            </section>   
                     
-                        <p> The map of Nigeria indicates population by State using data from the 2019 population census </p>
-                    </section>
-
-                </section>
-
+             <section>
+                 <div class="chart-description"> 
+                  <br>
+                    <h2>CC7: Maps. Base maps and choropleths  </h2>
+                    <hr>
+                     <br>
+                    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                    I chose the base map of Nigeria   
+                     </p>              
+                </div>
+                   
+                <div>
+                    <figure id="Location21"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->   
+                       <p> 
+                        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/6769e461-594c-8004-b549-c38ce6f4f263">ChatGPTprompt</a>
+                    </p>  
+                    <br>
+                        <p> 
+                        The second map is a choropleth map of Nigeria indicating population by State using data from the 2019 population census.
+                        </p>              
+                    <figure id="Location22"></figure>
+                </div>
+                <br>
+                <hr>    
             </section>
 
+            <section>
+                    <div class="chart-description"> 
+                     <br>
+                       <h2>CC8: Big Data. Extracting a story from millions of prices  </h2>
+                       <hr>
+                        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                       I used the AutoCPI dataset dataset to produce two charts. In the first chart, I used the AutoCPI data to generate the average unit price per store. The second chart is a heatmap of prices by store and date. I filtered the last 1000 rows to show prices heatmap from April to November. (code for charts generated using Gemini in colab but am unable to access the link)
+                        </p>  
+                        <figure id="Location23"></figure>
+                        <figure id="Location24"></figure>      
+                   </div>
+                   <br>
+                   <p>
+                    <a href="https://colab.research.google.com/drive/1BqklqxkfypwIxoc_6n8hVPULcrYh6U21#scrollTo=ODwh5Kyo3_8a">COLAB</a>
+                   </p>
+                   <br>
+                   <hr>
+            </section>
 
+            <section>
+                <div class="chart-description"> 
+                    <br>
+                      <h2>CC9: Analytics charts  </h2>
+                      <hr>
+                       <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                      I produced a scatter chart and a regression chart using part of the data that was batch downloaded from the World Bank database using the World Bank API. The first chart is a bubble chart and the second is a regression chart. These charts are also part of my project. 
+                       </p>  
+                       <figure id="Location25"></figure>
+                       <p>
+                        Code generate with assistance of Gemini using Python. Notebook link provided below (couldn’t access the prompts)
+                       </p> 
+                       <p>
+                        <a href="https://colab.research.google.com/drive/1Kni5wURapL1Vr4ba1GtuyU-2ELYsPEP2#scrollTo=mmTV__zR55jT">COLAB</a>
+                       </p>
+                         
+                       <figure id="Location26"></figure>                     
+                    </div>
+                  <br>
+                  <hr>
+            </section>
+           
+            
+            <section>
+            <div class="chart-description"> 
+                <br>
+                  <h2> CC10: Interactive Visualisations </h2>
+                  <hr>
+                   <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                  I produced two interactive charts. The first chart on the Kenya Inflation rate filters time with range slider to view the inflation trend from 1960 to 2023 at ranges chosen by the user. The second chart uses a dropdown selection to view data for three socioeconomic parameters in the country of Nigeria. 
+                   </p>  
+                   <figure id="Location27"></figure>        
+                   <figure id="Location28"></figure>                     
+              </div>
+                <br>
+                    <p>
+                    OpenAI. (2024). ChatGPT (Dec Version). [Large language model]. <a href="https://chatgpt.com/c/676d9627-6720-8004-b455-eb1698b24d01">ChatGPTprompt_1</a>
+                   </p>
+                   <p>
+                    OpenAI. (2024). ChatGPT (Dec Version). [Large language model]. <a href="https://chatgpt.com/c/676dceed-14fc-8004-b630-04b64f94874a">ChatGPTprompt_2</a>
+                   </p>
+              <br>
+             <hr>
+            </section>
         </div>
-        
-        
+
         <!-- Project Tab -->
         <div id="project" class="tab-content">
             <!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+    
+        <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
         <!-- This is a header, it is the largest text on the page -->
-        PROJECT
-    </h1>
-    <p style="margin-top: 0px; color: darkblue">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        Millicent Makina | <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">LinkedIn</a> | <a
-            href="https://www.github.com/YOUR_GITHUB">GitHub</a>
-    </p>
+        Project
+        </h1>
+        <br>
+        <hr>
+
+    <h2> 
+        Exploring Kenya’s Debt Vulnerabilities: The Impact on Foreign Exchange Reserves  
+    </h2>
+    <hr>
+    <br>
+
+    <section>
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        EXPLORING KENYA'S DEBT VULNERABILITIES: THE ROLE OF FOREIGN EXCHANGE RESERVES  
+        Aim of the Project 
     </h3>
-    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        AIM OF THE PROJECT 
-    </h3>
+    <hr>
+    <br>
     <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
         Kenya’s public debt has increased exponentially over the last decade with the Medium Term Debt Sustainability Analysis for 2024 estimating it  at USD 73.1 billion in nominal terms (70.8% of GDP). Of this amount, external debt is USD 38.8 billion which means that more than half of the country’s debt is denominated in foreign currency. This raises concerns on the ability of the country’s forex reserves to meet the debt obligations, as and when they fall due especially given the very real exposure to exchange rate risk as witnessed earlier in 2024 when significant loss in value of the shilling significantly increased the external debt stock. In June 2024, a USD 2 billion Eurobond maturity almost resulted in a default, but for a last minute intervention by the IMF as well as the issue of an international bond, which helped avert a looming debt default. 
-
-The project assesses Kenya’s ability to withstand external economic shocks by exploring the interplay between foreign exchange reserves and external debt accumulation, external debt service and  foreign exchange earnings/sources. 
-
     </p>
+
+    <p>
+         The project assesses Kenya’s ability to withstand external economic shocks by exploring the interplay between foreign exchange reserves and external debt accumulation, external debt service and foreign exchange earnings/sources. 
+    </p>
+   <hr>
+   <br>
+    </section>
+    
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
         <div class="chart-description">
             <h2>chart 1: Trends in external debt accumulation and forex inflows</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
-            </p>
+          <figure id="Location30"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
         </div>
-        <figure id="Location30"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        
     </section>
    
     <section>
         <div class="chart-description">
+            <br> 
+            <br>
+            <br> 
             <h2>chart 2: External debt vs. Forex reserves </h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
-            </p>
+            <figure id="Location31"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
         </div>
-        <figure id="Location31"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        
     </section>
 
     <section>
         <div class="chart-description">
-            <h2>chart 3: GDP vs. debt </h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
-            </p>
+            <br>
+            <br>
+            <br>
+            <h2>chart 3: GDP vs. Debt </h2>
+            <figure id="Location32"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
         </div>
-        <figure id="Location32"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        
     </section>
 
     <section>
         <div class="chart-description">
+            <br>
+            <br>
+            <br>
             <h2>chart 4: changes in foreign reserves over the years </h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
-            </p>
+            <figure id="Location33"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
         </div>
-        <figure id="Location33"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        
     </section>
   
     <section>
         <div class="chart-description">
+            <br>
+            <br>
+            <br>
             <h2>chart 5: debt service and exports over the years </h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
-            </p>
+            <figure id="Location34"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
         </div>
-        <figure id="Location34"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
+        
+    <hr>
+    <br>
+    <br>
 
+
+    </section>
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        DATA 
+        Data
     </h3>
+    <hr>
+    <br>
+
     <p>
         I used data that was batch downloaded from the World Bank website using the World Bank API (coding challenge 6). This addresses automation/replication. I downloaded nine different JSON files using a loop. These were saved to my GitHub account.
-
-The files were in JSON format and I encountered a challenge as I couldn’t figure out how to use data in the JSON format to create the charts or how to convert them to the more usable CSV format. In the end, I used a JSON to CSV converter that I found online (konklone.io) to convert the data to CSV. I then manually created a CSV file, dropping missing values and only using data from the years with full data available.
-
- I used python (pandas) to combine all the batch downloaded data into a combined data frame. Thereafter, I reshaped the data using python (pandas) to remove scientific notation and to convert from wide form to long form. However, I noted that some charts required wide form data for them to run effectively, so I saved different files of the same data in different formats depending on the needs of the chart. As a result, the charts use data from different CSV files.
-
     </p>
+    <p>
+        The files were in JSON format and I encountered a challenge as I couldn’t figure out how to use data in the JSON format to create the charts or how to convert them to the more usable CSV format. In the end, I used a JSON to CSV converter that I found online (konklone.io) to convert the data to CSV. I then manually created a CSV file, dropping missing values and only using data from the years with full data available.
+    </p>
+    <p>
+        I used python (pandas) to combine all the batch downloaded data into a combined data frame. Thereafter, I reshaped the data using python (pandas) to remove scientific notation and to convert from wide form to long form. However, I noted that some charts required wide form data for them to run effectively, so I saved different files of the same data in different formats depending on the needs of the chart. As a result, the charts use data from different CSV files.
+    </p>
+    <br>
+    <p>
+       <a href="https://colab.research.google.com/drive/12_8yaGLuPh19jCgptkGSx1GnDce2pxef#scrollTo=qIBqoCS8Hhna">COLAB_1</a> 
+       
+       <a href="https://colab.research.google.com/drive/1-Zf89fBfXEOxEJY9j4Wq8glGGppwTeJs?authuser=0#scrollTo=efwH27MKEAK7">COLAB_2</a>
+   
+        <a href="https://colab.research.google.com/drive/1k3KbKbhoDrs1K7BiexmlPql2-A87rT45">COLAB_3</a>
+
+        <a href="https://colab.research.google.com/drive/1k2hW10eqVN3bK0KQlw5fmYh1VCoZ-kNi">COLAB_4</a>
+
+        <a href="https://colab.research.google.com/drive/1Kni5wURapL1Vr4ba1GtuyU-2ELYsPEP2">COLAB_5</a>
+
+        <a href="https://colab.research.google.com/drive/1-Zf89fBfXEOxEJY9j4Wq8glGGppwTeJs">COLAB_6</a>
+
+          <a href="https://colab.research.google.com/drive/12_8yaGLuPh19jCgptkGSx1GnDce2pxef">COLAB_7</a>
+    </p>
+    
+    <hr>
+    <br>
+
 
     <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        CONCLUSION 
+        Conclusion 
     </h3>
+    <hr>
+    <br>
+
     <p>
-        While Kenya’s external debt increased rapidly in the past decade, foreign exchange reserves appear to be declining since 2023. This can be attributed to an increase in debt service obligations as shown in chart ** and **. Debt service as a percentage of exports has also increased significantly. This leaves the country exposed to external economic shocks.
-
-        Over the last five years, forex reserve accumulation has mostly been driven by a substantial increase in personal remittances, and – as from 2021 – an increase in IMF credit when the Fund approved a loan to Kenya under the EFF/ECF facility to support its Balance of Payments. Though remittances are a good lifeline that has supported forex reserves over the years, it can be risky to the economy if they dry up. It would be more beneficial for the country to diversify and focus on increasing export earnings which will also drive up economic growth in addition to enhancing resilience to external economic shocks. Export earnings has not increased much over the last decade.
-
-        Notably, despite rapid accumulation of debt to enhance economic performance, the level of debt doesn’t appear to have had much influence on economic growth.
-
+        While Kenya’s external debt increased rapidly in the past decade, foreign exchange reserves appear to be declining since 2023. This can be attributed to an increase in debt service obligations as shown in chart 2 and 5. Debt service as a percentage of exports has also increased significantly which eats into forex reserves and has left the country exposed to external economic shocks.
     </p>
+    <p>
+        Over the last five years, forex reserve accumulation has mostly been driven by a substantial increase in personal remittances, and – as from 2021 – an increase in IMF credit when the Fund approved a loan to Kenya under the EFF/ECF facility to support its Balance of Payments. Though remittances are a good lifeline that has supported forex reserves over the years, it can be risky to the economy if they dry up. It would be more beneficial for the country to diversify and focus on increasing export earnings which will also drive up economic growth in addition to enhancing resilience to external economic shocks. Export earnings have not increased much over the last decade.
+    </p> 
+    <p>
+        Notably, despite rapid accumulation of debt to enhance economic performance, debt accumulation doesn’t appear to have enhanced economic growth.
+    </p> 
+    <br>
+    <hr>
+    
+    <br>
+    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        Bibliography 
+    </h3>
+    <hr>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/676f22d3-54dc-8004-a8dc-66d3997997da">ChatGPTprompt_JSON_CSV_Conversion</a>
+    </p>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/676f0a50-45ec-8004-9900-782ed2334e52">ChatGPTprompt_WB_data_reconfiguration</a>
+    </p>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/676ff0fc-9e40-8004-9efe-3b18acefca3d">ChatGPTprompt_Chart_1_trend_code</a>
+    </p>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/676eb7a8-2b58-8004-9d65-21d0a636d5cc">ChatGPTprompt_Chart_4_dynamic_filtering_1_code</a>
+    </p>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/67714b2b-aabc-8004-b8b2-cba3019e687b">ChatGPTprompt_Chart_4_dynamic_filtering_2_code</a>
+    </p>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/67715562-9038-8004-ba1c-ccb12d651a09">ChatGPTprompt_Chart_Debt_service_%exports_code</a>
+    </p>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/67717e5e-db80-8004-9931-8741ac062e3f">ChatGPTprompt_Debt_service_exports_hovermap</a>
+    </p>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/6771bb5d-8378-8004-acb2-3b833206d7f4">ChatGPTprompt_Analysis_layout</a>
+    </p>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/67784338-ed9c-8004-9799-513c8aec1f54">ChatGPTprompt_CSS_styling</a>
+    </p>
+    <p>
+        OpenAI. (2024). ChatGPT (Dec Version) [Large language model]. <a href="https://chatgpt.com/c/677844ba-1504-8004-8057-f675a004e923">ChatGPTprompt_CSS_styling</a>
+    </p>
+
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
         <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
@@ -402,11 +623,11 @@ The files were in JSON format and I encountered a challenge as I couldn’t figu
         let figure_32_spec = "GDP_debt_regression.json"
         let figure_33_spec = "reserves_movement.json"
         let figure_34_spec = "debt_service_exports.json"
-        vegaEmbed('#Location1', figure_30_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        vegaEmbed('#Location2', figure_31_spec)
-        vegaEmbed('#Location3', figure_32_spec)
-        vegaEmbed('#Location4', figure_33_spec)
-        vegaEmbed('#Location5', figure_34_spec)
+        vegaEmbed('#Location30', figure_30_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+        vegaEmbed('#Location31', figure_31_spec)
+        vegaEmbed('#Location32', figure_32_spec)
+        vegaEmbed('#Location33', figure_33_spec)
+        vegaEmbed('#Location34', figure_34_spec)
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
         // e.g. 
@@ -445,8 +666,15 @@ The files were in JSON format and I encountered a challenge as I couldn’t figu
             let figure_20_spec = "BX.TRF.PWKR.CD.DT.json"
             let figure_21_spec = "Nigeria_base_map.json"
             let figure_22_spec = "Nigeria_population.json"
-        
-    
+            let figure_23_spec = "big_data_avprice.json"
+            let figure_24_spec = "bigdata_prices_heatmap.json"
+            let figure_25_spec = "debt_stock_reserves.json"
+            let figure_26_spec = "GDP_debt_regression.json"
+            let figure_27_spec = "Kenya_inflation.json"
+            let figure_28_spec = "Nigeria_dropdown.json"
+
+
+
             vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
             vegaEmbed('#Location2', figure_2_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
             vegaEmbed('#Location3', figure_3_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
@@ -469,7 +697,14 @@ The files were in JSON format and I encountered a challenge as I couldn’t figu
             vegaEmbed('#Location20', figure_20_spec)
             vegaEmbed('#Location21', figure_21_spec)
             vegaEmbed('#Location22', figure_22_spec)
-    
+            vegaEmbed('#Location23', figure_23_spec)
+            vegaEmbed('#Location24', figure_24_spec)
+            vegaEmbed('#Location25', figure_25_spec)
+            vegaEmbed('#Location26', figure_26_spec)
+            vegaEmbed('#Location27', figure_27_spec)
+            vegaEmbed('#Location28', figure_28_spec)
+
+
             // Do you want to add more graphs?
             // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
             // e.g. 
