@@ -8,7 +8,7 @@
   },
   "height": 200,
   "title": "External Debt Service (% of Exports)",
-  "width": 300,
+  "width": 350,
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "datasets": {
     "data-e28c09fdad357fe255c8c27ed172b7ec": [

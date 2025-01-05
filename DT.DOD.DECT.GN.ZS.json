@@ -8,7 +8,7 @@
   },
   "height": 200,
   "title": "External Debt (% of GNI)",
-  "width": 300,
+  "width": 350,
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "datasets": {
     "data-cb5ed6b37f79111cf44d1012e6dac9b9": [

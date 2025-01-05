@@ -8,7 +8,7 @@
   },
   "height": 200,
   "title": "Multilateral Debt (Current USD)",
-  "width": 300,
+  "width": 280,
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "datasets": {
     "data-394afdb2631aeef26b7081511254f844": [
