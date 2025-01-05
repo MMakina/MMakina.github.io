@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/RTE_chart_data3.csv",
+        "format": {"type": "csv"}
+    },
+    "title": "Which ONE was MOST IMPORTANT to you in deciding how to vote today? ALL VOTERS",
+    "width": 400,
+    "height": 300,
+    "mark": {
+        "type": "bar",
+        "color": "red"
+    },
+    "encoding": {
+        "x": {
+            "field": "percentage",
+            "type": "quantitative",
+            "title":null
+        },
+        "y": {
+            "field": "category",
+            "type": "nominal",
+            "title":null,
+            "sort": "-x" 
+        }
+    }
+}
+

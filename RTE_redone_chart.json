@@ -1,0 +1,116 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/RTE_chart_data.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "title": "Which ONE was MOST IMPORTANT to you in deciding how to vote today? ALL VOTERS",
+    "width": 450,
+    "height": 300,
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "value",
+            "type": "quantitative",
+            "stack": "normalize",
+            "title": "Percentage (%)",
+            "scale": {
+              "domain": [
+                1,
+                0
+              ]
+            }
+          },
+          "y": {
+            "field": "name",
+            "type": "nominal",
+            "axis": null
+          },
+          "color": {
+            "field": "category",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "percentage2",
+                "percentage1"
+              ],
+              "range": [
+                "beige",
+                "red"
+              ]
+            },
+            "title": "Category",
+            "legend":null
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.category === 'percentage1'"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 5
+        },
+        "encoding": {
+          "x": {
+            "field": "value",
+            "type": "quantitative",
+            "stack": "normalize"
+          },
+          "y": {
+            "field": "name",
+            "type": "nominal"
+          },
+          "text": {
+            "field": "name",
+            "type": "nominal"
+          },
+          "color": {
+            "value": "black"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.category === 'percentage1'"
+          },
+          {
+            "calculate": "datum.value + '%'",
+            "as": "percentage"
+          }
+        ],
+        "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "middle",
+            "fill": "black"
+        },
+        "encoding": {
+            "x": {
+              "field": "value",
+              "type": "quantitative",
+              "stack": "normalize",
+              "bandPosition": 0
+            },
+            "y": {
+                "field": "name",
+                "type": "nominal"
+            },
+            "text": {
+              "field": "percentage",
+              "type": "nominal"
+            }
+        }
+      }
+    ]
+  }

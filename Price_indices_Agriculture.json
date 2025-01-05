@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/MMakina/MMakina.github.io/refs/heads/main/cleanedpriceindices.csv"
+    },
+    "mark": {"type": "line"},
+    "width": 600,
+    "height": 300,
+    "title": {
+      "text": "Price Indices",
+      "subtitle": [
+        "Price indices for purchased agricultural inputs 2018 - 2022",
+        "Source: KNBS",
+        ""
+      ]
+    },
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "timeUnit":"year",
+        "title": "",
+        "axis": {"grid": false}
+      },
+  
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": ""
+          },
+      "color": {"field": "Input", "legend": {"title": "", "orient": "top"}}
+    }
+  }
+  
+  
